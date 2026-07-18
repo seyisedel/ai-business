@@ -32,15 +32,15 @@ import {
    ========================================================================= */
 
 // ---------- Placeholder links (easily editable) ----------
-// {/* SELAR LINK: replace with actual Selar checkout URL */}
-const SELAR_PROMPT_PACK = 'https://selar.co/YOUR-PROMPT-PACK-LINK';
-// {/* SELAR LINK: replace with actual Selar checkout URL */}
-const SELAR_PLAYBOOK = 'https://selar.co/YOUR-PLAYBOOK-LINK';
-// {/* SELAR LINK: replace with actual Selar checkout URL */}
-const SELAR_OPERATING_SYSTEM = 'https://selar.co/YOUR-OS-LINK';
-// {/* IMPLEMENTATION LINKS: replace with actual mailto and WhatsApp */}
-const CONSULT_EMAIL = 'mailto:hello@ainigerianbusiness.com?subject=Implementation%20Service%20Enquiry';
-const CONSULT_WHATSAPP = 'https://wa.me/234XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20the%20AI%20Implementation%20Service.';
+// {/* SELAR LINK */}
+const SELAR_PROMPT_PACK = 'https://selar.com/25814f9q7t';
+// {/* SELAR LINK */}
+const SELAR_PLAYBOOK = 'https://selar.com/25814f9q7t';
+// {/* SELAR LINK */}
+const SELAR_OPERATING_SYSTEM = 'https://selar.com/25814f9q7t';
+// {/* IMPLEMENTATION LINKS */}
+const CONSULT_EMAIL = 'mailto:strateonglobal@gmail.com?subject=Implementation%20Service%20Enquiry';
+const CONSULT_WHATSAPP = 'https://wa.me/2348131656205?text=Hi%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20the%20AI%20Implementation%20Service.';
 
 // ---------- Nav links ----------
 const NAV_LINKS = [
@@ -665,7 +665,7 @@ function Testimonials() {
           </div>
           <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-muted">
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
-            Placeholder testimonials — to be replaced with real ones
+            Testimonials
           </span>
         </div>
 
