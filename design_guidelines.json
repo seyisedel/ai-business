@@ -1,0 +1,148 @@
+{
+  "theme": "light",
+  "typography": {
+    "headings": {
+      "family": "Playfair Display, serif",
+      "weights": ["400", "700", "900"],
+      "description": "Premium, confident, and editorial. DO NOT use generic sans-serif fonts for headings."
+    },
+    "body": {
+      "family": "Plus Jakarta Sans, sans-serif",
+      "weights": ["400", "500", "600"],
+      "description": "Clean, highly legible geometric sans for perfect contrast with the serif headlines."
+    },
+    "scale": {
+      "h1": "text-5xl md:text-6xl tracking-tight leading-[1.1]",
+      "h2": "text-3xl md:text-4xl tracking-tight leading-[1.2]",
+      "h3": "text-xl md:text-2xl leading-snug",
+      "body": "text-base md:text-lg leading-relaxed text-slate-700",
+      "small": "text-sm tracking-wide uppercase text-slate-500"
+    }
+  },
+  "colors": {
+    "primary": {
+      "DEFAULT": "#1F3864",
+      "light": "#2A4B85",
+      "dark": "#132442",
+      "description": "Deep navy blue. Used for prominent backgrounds, major headings, and the final CTA band."
+    },
+    "accent": {
+      "DEFAULT": "#B8860B",
+      "hover": "#986F09",
+      "description": "Gold. Used strictly for CTAs, important highlights, and the 'Most Popular' badge."
+    },
+    "background": {
+      "main": "#FDFDFD",
+      "alt": "#F3F4F6",
+      "card": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#0F1C32",
+      "secondary": "#475569",
+      "inverse": "#FFFFFF"
+    },
+    "support": {
+      "blue": "#1F6FB2",
+      "coral": "#C1440E",
+      "teal": "#0F766E",
+      "amber": "#B8860B"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "card": "shadow-[0_4px_24px_rgba(31,56,100,0.06)]",
+      "hover": "shadow-[0_12px_40px_rgba(31,56,100,0.12)]"
+    },
+    "borders": {
+      "subtle": "border-slate-200",
+      "accent": "border-[#B8860B]/30"
+    },
+    "radii": {
+      "card": "rounded-2xl",
+      "button": "rounded-full"
+    },
+    "textures": {
+      "paper": "Use a subtle CSS noise or the provided white paper texture image at 3-5% opacity over off-white backgrounds to kill digital flatness."
+    }
+  },
+  "layouts": {
+    "spacing": {
+      "section_y": "py-20 md:py-32",
+      "container": "max-w-7xl mx-auto px-6 md:px-12",
+      "gap": "gap-8 md:gap-12"
+    },
+    "sections": {
+      "nav": "Sticky top nav (logo left, links center, CTA right). Solid white or glassmorphism background to ensure scroll text does not bleed through.",
+      "hero": "Two-column asymmetrical or centered with constrained max-width (max-w-3xl). Generous white space. Hero title in Playfair Display.",
+      "product_ladder": "4-column grid on desktop (grid-cols-1 md:grid-cols-2 lg:grid-cols-4). The 3rd card must be scaled up slightly (scale-105 on desktop) with a Gold border and a distinct 'Most Popular' badge.",
+      "features": "3-column CSS Grid. Use lucide-react icons in a Gold/Navy circular wrapper. Left-align text for readability.",
+      "testimonials": "Masonry or 3-column grid. Clean white cards on an off-white background.",
+      "faq": "Max-width constrained (max-w-3xl) accordion centered on page. Use lucide-react plus/minus icons.",
+      "final_cta": "Full-width deep navy background. Gold text. Centered text alignment, high contrast."
+    }
+  },
+  "motion": {
+    "hover_states": "Buttons translate-y-[-2px] with increased shadow. Cards translate-y-[-4px]. Use transition-all duration-300 ease-out.",
+    "entrances": "Fade up (translate-y-8, opacity-0 to opacity-100) on scroll using framer-motion. Stagger children for grid items."
+  },
+  "media": {
+    "image_urls": {
+      "hero_background_abstract": {
+        "url": "https://images.unsplash.com/photo-1614850523011-8f49ffc73908?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxuYXZ5JTIwYmx1ZSUyMGFic3RyYWN0JTIwdGV4dHVyZXxlbnwwfHx8fDE3ODQzNzg2Mjd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "Hero Section / CTA Band",
+        "description": "Dark blue abstract gradient background. Use with low opacity (10-20%) blending into the navy background for the Final CTA band."
+      },
+      "gold_texture": {
+        "url": "https://images.unsplash.com/photo-1764437358247-51f409686853?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwzfHxnb2xkJTIwYWJzdHJhY3QlMjBnZW9tZXRyaWN8ZW58MHx8fHwxNzg0Mzc4NjI3fDA&ixlib=rb-4.1.0&q=85",
+        "category": "Accents",
+        "description": "Abstract golden rectangles. Can be used as a mask or very subtle background detail in the 'Most Popular' card."
+      },
+      "paper_texture": {
+        "url": "https://images.pexels.com/photos/5506216/pexels-photo-5506216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "Global Background",
+        "description": "Minimalist white paper texture. Overlay on the entire site background with mix-blend-multiply and 2% opacity to add editorial print feel."
+      }
+    }
+  },
+  "components": {
+    "buttons": "Pill-shaped (rounded-full). Primary uses Gold (#B8860B) background with White text. Hover state slightly darker gold (#986F09). Secondary is transparent with Navy border.",
+    "cards": "Flat, pure white (#FFFFFF), 1px border (#E2E8F0), rounded-2xl. Padding inside should be generous (p-8).",
+    "badge": "For 'Most Popular': position absolute, top-0, translate-y-[-50%]. Background Gold (#B8860B), text White, bold, uppercase, tracking-widest, text-xs, rounded-full, px-4 py-1."
+  },
+  "accessibility": {
+    "contrast": "Ensure Gold (#B8860B) text on White passes APCA. If not, darken Gold slightly for text, but keep brand Gold for large buttons.",
+    "focus": "Use focus:ring-2 focus:ring-offset-2 focus:ring-[#1F3864]",
+    "testing": "All interactive elements MUST include data-testid attribute (e.g., data-testid='hero-cta-button')."
+  },
+  "instructions_to_main_agent": [
+    "Use Playfair Display for all h1, h2, h3 tags and Plus Jakarta Sans for body text.",
+    "Avoid AI slop: NO purple gradients, NO 'Inter' font, NO centered cards with drop shadows everywhere.",
+    "Implement the 'Most Popular' pricing card by scaling it to 1.05 on md+ screens, giving it a border of #B8860B, and adding the Gold badge on top.",
+    "For the Localisation Feature Grid (Why this is different), left-align the content. Use Lucide icons (size 24 or 32, strokeWidth 1.5) with a navy or gold background circle.",
+    "In the Social Proof section, do not use photos of people. Use the user's initials (e.g., 'OA') in an elegant circular avatar with a Navy background and Gold text.",
+    "Ensure the Navigation bar is sticky and uses a solid white or heavily blurred glass background so text does not clash with scrolling content.",
+    "Do not use generic robot or human photos. The design should rely heavily on its typography, grid, spacing, and brand colors to feel expensive.",
+    "Build standard React (.js) components. Do not use Typescript (.tsx).",
+    "All components should be customized Shadcn elements or pure Tailwind HTML if Shadcn doesn't fit the editorial layout.",
+    "Use Naira currency (₦) for all pricing points."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Create new components that match the style and conventions of existing components when needed.",
+    "Examine existing components to understand the project's component patterns before creating new ones.",
+    "Use sonner for toasts, located in /app/src/components/ui/sonner.js."
+  ]
+}
