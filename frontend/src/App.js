@@ -56,7 +56,7 @@ const PRODUCTS = [
     id: 'prompt-pack',
     name: 'AI Prompt Pack',
     tag: 'Starter',
-    price: '₦5,000 – ₦10,000',
+    price: '₦7,500',
     description:
       '500+ ready-to-use AI prompts for customer service, marketing, HR & finance — written for Nigerian businesses.',
     features: [
@@ -874,6 +874,34 @@ function Footer() {
   );
 }
 
+function WhatsAppFloatingButton() {
+  return (
+    <a
+      href={CONSULT_WHATSAPP}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      className="group fixed bottom-6 right-6 z-[60] inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1FB955] text-white pl-3 pr-4 py-3 rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.35)] btn-primary"
+      data-testid="whatsapp-floating-button"
+    >
+      <span className="h-9 w-9 rounded-full bg-white/15 flex items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          className="w-5 h-5 fill-white"
+          aria-hidden="true"
+        >
+          <path d="M19.11 17.24c-.29-.14-1.71-.85-1.98-.94-.27-.1-.46-.14-.66.14-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.44.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.51h-.56c-.19 0-.5.07-.77.36-.27.29-1.02.99-1.02 2.42s1.05 2.81 1.19 3c.14.19 2.06 3.14 4.99 4.4.7.3 1.24.48 1.66.62.7.22 1.34.19 1.85.11.56-.08 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.37-.07-.13-.26-.19-.55-.34zM16.02 5.33c-5.9 0-10.7 4.79-10.7 10.68 0 1.88.49 3.72 1.42 5.35L5.14 27l5.79-1.51a10.65 10.65 0 0 0 5.08 1.29h.01c5.89 0 10.68-4.79 10.68-10.68 0-2.85-1.11-5.53-3.13-7.55a10.6 10.6 0 0 0-7.55-3.22zm0 19.51h-.01c-1.61 0-3.19-.43-4.57-1.25l-.33-.19-3.44.9.92-3.35-.21-.34a8.87 8.87 0 0 1-1.36-4.72c0-4.9 3.99-8.88 8.9-8.88 2.38 0 4.61.93 6.29 2.6a8.85 8.85 0 0 1 2.61 6.29c0 4.9-3.99 8.88-8.9 8.88z" />
+        </svg>
+      </span>
+      <span className="hidden sm:inline text-sm font-semibold pr-1">
+        Chat on WhatsApp
+      </span>
+    </a>
+  );
+}
+
+
 function App() {
   return (
     <div className="min-h-screen bg-paper text-ink font-sans antialiased selection:bg-navy selection:text-gold">
@@ -888,6 +916,7 @@ function App() {
         <FinalCTA />
       </main>
       <Footer />
+      <WhatsAppFloatingButton />
     </div>
   );
 }
