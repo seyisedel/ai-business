@@ -1,0 +1,22 @@
+/* App-specific styles kept intentionally minimal — Tailwind handles most styling */
+
+.hero-mask {
+  background:
+    radial-gradient(700px 400px at 12% 10%, rgba(184,134,11,0.10), transparent 60%),
+    radial-gradient(600px 380px at 92% 30%, rgba(31,111,178,0.10), transparent 65%);
+}
+
+.divider-serif::before,
+.divider-serif::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(31,56,100,0.18), transparent);
+}
+
+.underline-serif {
+  text-decoration: underline;
+  text-decoration-color: rgba(184,134,11,0.6);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}

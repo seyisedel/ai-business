@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FDFDFD;
+  color: #0F1C32;
+  background-image:
+    radial-gradient(1200px 600px at -10% -10%, rgba(31,56,100,0.05), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, rgba(184,134,11,0.06), transparent 60%);
+}
+
+::selection {
+  background: #1F3864;
+  color: #F6F2EA;
+}
+
+/* Grain texture overlay for editorial feel */
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0 0.4 0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* Editorial number style */
+.numeral {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Button transitions - avoid transition:all so transforms remain crisp */
+.btn-primary {
+  transition-property: background-color, box-shadow, transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.card-hover {
+  transition-property: box-shadow, transform, border-color;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+}
+
+/* Marquee container helper */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Focus rings */
+button:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(31,56,100,0.35);
+  border-radius: 9999px;
+}
